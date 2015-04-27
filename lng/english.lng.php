@@ -1843,3 +1843,12 @@ $lng['admin']['configfiles']['commands'] = '<span class="red">Commands:</span> T
 $lng['admin']['configfiles']['files'] = '<span class="red">Configfiles:</span> This is an example of the contents of a configuration file. The commands before these textfields should open an editor with the target file. Just copy and paste the contents into the editor and save the file.<br><br><span class="red">Please note:</span> The MySQL-password has not been replaced for security reasons. Please replace "MYSQL_PASSWORD" on your own. If you forgot your MySQL-password you\'ll find it in "lib/userdata.inc.php"';
 $lng['serversettings']['apache_itksupport']['title'] = 'Use modifications for Apache ITK-MPM';
 $lng['serversettings']['apache_itksupport']['description'] = '<strong class="red">ATTENTION:</strong> use only if you acutally have apache itk-mpm enabled<br />otherwise your webserver will not be able to start';
+
+
+// Added for Plugin Support
+$lng['plugins']['plugins'] = 'Plugins';
+$lng['plugins']['active']['title'] = 'Enabled Plugins(s)';
+$lng['plugins']['active']['description'] = 'Active plugins. To select multiple plugins, hold down CTRL while selecting, or unselect all<br />';
+
+
+$lng['plugins']['plugin']['updatetext'] = 'Updating Plugin <strong>%pluginname</strong> to version <strong>%newversion</strong>';
