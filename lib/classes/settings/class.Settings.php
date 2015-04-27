@@ -184,6 +184,10 @@ class Settings {
 					'value' => $value
 			);
 			Database::pexecute($ins_stmt, $ins_data);
+			if (!isset(self::$_data[$sstr[0]])) {
+				self::$_data[$sstr[0]] = array();
+			}
+			self::$_data[$sstr[0]][$sstr[1]] = $value;
 			return true;
 		}
 		return false;
