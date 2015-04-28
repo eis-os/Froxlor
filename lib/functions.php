@@ -48,6 +48,7 @@ function exportDetails($fielddata, $newfieldvalue)
 }
 
 Autoloader::init();
+FroxlorEvent::init();
 
 /**
  * Class Autoloader
