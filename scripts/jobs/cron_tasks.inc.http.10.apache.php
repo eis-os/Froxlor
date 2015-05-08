@@ -804,6 +804,11 @@ class apache {
 			if (Settings::Get('system.default_vhostconf') != '') {
 				$vhost_content .= Settings::Get('system.default_vhostconf') . "\n";
 			}
+			FroxlorEvent::ApacheVHost(array(
+				'domain' => $domain,
+				'ssl_vhost' => $ssl_vhost,
+				'vhost_content' => &$vhost_content
+			));
 		}
 
 		$vhost_content .= '</VirtualHost>' . "\n";

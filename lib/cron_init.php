@@ -223,4 +223,5 @@ $idna_convert = new idna_convert_wrapper();
 // check for cron.d-generation task and create it if necessary
 checkCrondConfigurationFile();
 
+FroxlorPlugins::init();
 FroxlorEvent::CronInitDone();
